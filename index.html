@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Gadget Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+        nav {
+            background: #2563eb;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background: white;
+        }
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .offer {
+            background: #f59e0b;
+            color: #111;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e3a8a;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding-bottom: 20px;
+        }
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .product-content {
+            padding: 18px;
+        }
+        .product h3 {
+            color: #111827;
+            margin-bottom: 8px;
+        }
+        .price {
+            color: #dc2626;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            nav a {
+                display: block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>TechZone Gadget Store</h1>
+    <p>Your trusted destination for modern technology</p>
+</header>
+<nav>
+    <a href="#smartphones">Smartphones</a>
+    <a href="#laptops">Laptops</a>
+    <a href="#audio">Audio</a>
+    <a href="#wearables">Wearables</a>
+    <a href="#gaming">Gaming</a>
+</nav>
+<div class="offer">
+    🔥 Special Offer: Up to 20% OFF on selected gadgets!
+</div>
+<section class="hero">
+    <h2>Welcome to TechZone</h2>
+    <p>
+        Discover the latest smartphones, laptops, headphones,
+        smartwatches and gaming accessories at competitive prices.
+    </p>
+</section>
+<main>
+    <section id="smartphones">
+        <h2>📱 Smartphones</h2>
+        <div class="products">
+            <article class="product">
+                <img src="pictures/1.webp"
+                     alt="Modern smartphone">
+                <div class="product-content">
+                    <h3>Samsung Galaxy S26 Ultra 5G</h3>
+                    <p>
+
+Meet Galaxy S26 Ultra, your true AI companion. Powered by the next chapter of Galaxy AI with multi-modality, and the most advanced Galaxy fundamentals, Galaxy S26 Ultra naturally adapts to you: learning your patterns, anticipating your needs, and connecting your world seamlessly.</p>
+                    <p class="price">LKR 350,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/2.webp"
+                     alt="Smartphone">
+                <div class="product-content">
+                    <h3>iPhone 17 Pro Max</h3>
+                    <p> Powerful A19 Pro chip with 12 GB RAM and 256 GB storage for peak performance.
+6.9″ Super Retina XDR OLED display with 120 Hz ProMotion for ultra-smooth visuals. 
+Triple 48 MP Fusion rear cameras with advanced zoom and LiDAR support. 
+18 MP Center Stage front camera for smarter selfies and video calls. 
+Strong battery life, fast charging, MagSafe wireless support, and IP68 durability.</p>
+                    <p class="price">LKR 434,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/3.webp"
+                     alt="Mobile phone">
+                <div class="product-content">
+                    <h3>Xperia 1 Mark VII Brand New</h3>
+                    <p>A flagship smartphone released in June 2025 that combines high-end processing power with specialized tech from Sony’s Alpha, Walkman, and Bravia divisions.Audiophile Design: Retains the 3.5mm headphone jack with premium Walkman audio circuitry and improved stereo bass output.Creator Tools: Features a physical two-stage camera shutter button and the ability to connect to Sony Alpha cameras as an external monitor.</p>
+                    <p class="price">LKR 249,000</p>
+                    <p class="available">Limited Stock</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="laptops">
+        <h2>💻 Laptops</h2>
+        <div class="products">
+            <article class="product">
+                <img src="pictures/4.webp"
+                     alt="Laptop">
+                <div class="product-content">
+                    <h3>HP VICTUS 15 FB3166AX RYZEN 5 RTX 2050 4GB</h3>
+                    <p>HP VICTUS 15 FB3166AX RYZEN 5 RTX 2050 4GB
+AMD Ryzen 5 8645HS (up to 5.0 GHz , 16 MB L3 cache, 6 cores, 12 threads)
+8GB DDR5 5600Mhz
+512GB GEN4 NVME M.2 SSD
+15.6" FHD IPS LED Display 144HZ Thin Bezel (300 nits)
+NVIDIA® GeForce RTX 2050 4GB GDDR6
+Backlit Keyboard
+2.29KG, 52.5 WHr</p>
+                    <p class="price">LKR 285,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/5.webp"
+                     alt="Laptop computer">
+                <div class="product-content">
+                    <h3>ASUS ROG SCAR 18 (2026) G835LXG Ultra 9 RTX 5090</h3>
+                    <p>The 2026 Strix SCAR 18 offers the very best Windows 11 Pro gaming experience, featuring an Intel® Core™ Ultra 9 290HX Plus processor and up to an NVIDIA® GeForce RTX™ 5090 Laptop GPU. Both the memory and storage are user-upgradeable, supporting up to 128GB (64+64) of DDR5-6400 memory and 8TB (4+4) of ultra-fast SSD space. A user-friendly tool-less design allows for easy upgrades to both the memory and SSD slots, letting you grow your game library without a hassle for years.
+ASUS ROG SCAR 18 G835LX Ultra 9 RTX 5090 Intel® Core Ultra 9 290HX Plus (36MB Cache, up to 5.5 GHz, 24 cores, 24 Threads)</p>
+                    <p class="price">LKR 2,149,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/6.webp"
+                     alt="Gaming laptop">
+                <div class="product-content">
+                    <h3>ASUS ROG ZEPHYRUS DUO 16 GX651AX Ultra 9 RTX 5090</h3>
+                    <p>Harness the raw power of up to an NVIDIA® GeForce RTX™ 5090 Laptop GPU with a max TGP of 150W. This flagship GPU offers the latest gaming and AI features, including DLSS 4, 4th Gen ray-tracing cores, and up to 1824 TOPS of NPU compute for local AI applications, no cloud connection required. With a max TGP of 150W, you can pump up resolution, texture, and fidelity in all of the latest games.</p>
+                    <p class="price">LKR 2,399,000</p>
+                    <p class="available">Limited Stock</p>
+                </div>
+            </article>	
+        </div>
+    </section>
+    <section id="audio">
+        <h2>🎧 Audio & Headphones</h2>
+        <div class="products">
+            <article class="product">
+                <img src="pictures/7.webp"
+                     alt="Headphones">
+                <div class="product-content">
+                    <h3>ASUS ROG DELTA S CORE GAMING HEADSET</h3>
+                    <p>Exclusive 50 mm ASUS Essence drivers and airtight chamber technology for immersive sound
+Virtual 7.1 surround sound supported by Windows Sonic
+Discord- and TeamSpeak-certified boom microphone for clear in-game voice communication
+Lightweight 270-gram design with ergonomic D-shaped ear cushions for long-lasting comfort.</p>
+                    <p class="price">LKR 29,500</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/8.webp"
+                     alt="Wireless earbuds">
+                <div class="product-content">
+                    <h3>ASUS TUF Gaming H3 - 3.5mm Wired Headset</h3>
+                    <p>Driver: Graphene 1.97 in (50 mm)
+Magnet: Neodymium
+Frequency Response: 20 Hz-20 KHz
+Impedance: 38 Ohms
+Sensitivity: 87.8 dB SPL @ 1 mW & 1 cm
+Materials
+Fork: Aluminum
+Headband: Steel
+Ear and head pads: Memory Foam Leatherette
+Extra Ear pads: Memory Foam Cloth
+Microphone Pickup Pattern: Cardioid (Unidirectional)
+Type: Electret Condenser
+Size: 0.24 in (6 mm)
+Frequency Response: 100 Hz-10 KHz
+Wireless</p>
+                    <p class="price">LKR 40,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/9.webp"
+                     alt="Premium headphones">
+                <div class="product-content">
+                    <h3>Logitech G PRO X 2 Wireless Gaming Headset</h3>
+                    <p>Driver: Graphene 1.97 in (50 mm)
+Magnet: Neodymium
+Frequency Response: 20 Hz-20 KHz
+Impedance: 38 Ohms
+Sensitivity: 87.8 dB SPL @ 1 mW & 1 cm
+Materials
+Fork: Aluminum
+Headband: Steel
+Ear and head pads: Memory Foam Leatherette
+Extra Ear pads: Memory Foam Cloth
+Microphone Pickup Pattern: Cardioid (Unidirectional)
+Type: Electret Condenser
+Size: 0.24 in (6 mm)
+Frequency Response: 100 Hz-10 KHz
+Wireless</p>
+                    <p class="price">LKR 78,500</p>
+                    <p class="available">New Arrival</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="wearables">
+        <h2>⌚ Smartwatches / Wearables</h2>
+        <div class="products">
+            <article class="product">
+                <img src="pictures/10.webp"
+                     alt="Smartwatch">
+                <div class="product-content">
+                    <h3>Apple Watch SE 3 40mm</h3>
+                    <p>
+Height: 44mm,
+Width: 38mm,
+Depth: 10.7mm,
+368 by 448 pixels,
+977 sq mm display area,
+Weight (GPS): 32.9 grams,
+Weight (GPS + Cellular): 33.0 grams,
+Fits 140–245mm wrists,
+40mm,
+Height: 40mm,
+Width: 34mm,
+Depth: 10.7mm,
+324 by 394 pixels,
+759 sq mm display area,
+Weight (GPS): 26.3 grams,
+Weight (GPS + Cellular): 26.4 grams,
+Fits 130–200mm wrists.</p>
+                    <p class="price">LKR 86,000</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/11.webp"
+                     alt="Fitness smartwatch">
+                <div class="product-content">
+                    <h3>Apple Watch Ultra 3</h3>
+                    <p>The rugged 49mm aerospace-grade titanium case comes with precision dual-frequency GPS + Cellular connectivity and new built-in satellite communications.</p>
+                    <p class="price">LKR 253,500</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/12.webp"
+                     alt="Smartwatch">
+                <div class="product-content">
+                    <h3>Samsung Galaxy Watch Ultra 2025</h3>
+                    <p> The Samsung Galaxy Watch Ultra (2025) 47mm LTE is a premium outdoor smartwatch built for demanding activities and everyday wellness. Its durable titanium case, 10 ATM water resistance, dual-frequency GPS and bright 1.5-inch Super AMOLED display make it ready for outdoor adventures. Galaxy AI, advanced health sensors, 64 GB of storage and a 590 mAh battery with up to 100 hours in Power Saving Mode deliver intelligent insights, reliable navigation and impressive endurance.</p>
+                    <p class="price">LKR 117,500</p>
+                    <p class="available">New Arrival</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="gaming">
+        <h2>🎮 Gaming Accessories</h2>
+        <div class="products">
+            <article class="product">
+                <img src="pictures/13.webp"
+                     alt="Gaming keyboard">
+                <div class="product-content">
+                    <h3>MEETION MK009 WIRED HOT-SWAP MECHANICAL KEYBOARD</h3>
+                    <p>Key Specifications
+Switch Type: Membrane / Rubber-dome with an 8 million keystroke lifetime.
+Layout & Keys: 104 keys total including 12 media keys.
+Lighting: RGB rainbow backlit illumination with transparent keycaps and cover for enhanced glow.
+Anti-Ghosting: 6-key anti-ghosting support.
+Connectivity & Build: Wired connection, ABS plastic material, and adjustable height.</p>
+                    <p class="price">LKR 7,500</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/14.webp"
+                     alt="Gaming mouse">
+                <div class="product-content">
+                    <h3>FANTECH WG7V2RD CRYPTO II TRI-MODE GAMING MOUSE</h3>
+                    <p>Performance & Hardware
+Sensor & DPI: Optical gaming sensor with an adjustable range of 400 to 12,000 DPI.
+Tracking Speed & Acceleration: 120 IPS tracking speed and 25G max acceleration.
+Polling Rate: Up to 1000 Hz for low-latency input.
+Switches: Huano mechanical switches rated for 20 million clicks.
+Buttons: 6 programmable macro buttons.</p>
+                    <p class="price">LKR 28,500</p>
+                    <p class="available">Available</p>
+                </div>
+            </article>
+            <article class="product">
+                <img src="pictures/15.webp"
+                     alt="Gaming controller">
+                <div class="product-content">
+                    <h3>FANTECH REVOLVER GP12 GAMING CONTROLLER</h3>
+                    <p>Component / Feature	Specification Detail
+Model Number	GP12 (Revolver Series)
+Controller Type	Ergonomic Gaming Controller / Gamepad
+Connectivity	USB Wired
+Total Buttons	17 pcs
+Vibration Feedback	Yes (Dual Vibration Feedback Motors)
+Layout Style	Familiar Console-Like Layout
+Cable Type	Standard PVC Cable
+Cable Length	1.8 Meters (~6 feet)
+Dimensions	154 mm × 113 mm × 58 mm
+Weight	170g
+Hardware Compatibility	PC (Windows) and PlayStation 3 (PS3)
+﻿</p>
+                    <p class="price">LKR 5,500</p>
+                    <p class="available">Limited Stock</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 TechZone Gadget Store. All Rights Reserved.</p>
+    <p>Email: sales@techzone.example | Phone: +94 70 1020 744</p>
+</footer>
+</body>
+</html>
